@@ -1,0 +1,39 @@
+.skills__card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+  width: 220px;
+  height: 320px;
+  padding: 12px;
+  background-image: url('../../assets/deep_space.jpg');
+  border: 4px solid #63657a;
+  cursor: pointer;
+}
+
+.skills__tracker:has(.skills__card:hover) {
+  animation-play-state: paused;
+}
+
+.skills__card div.tec_name {
+  border-top: 2px solid #7a7a78;
+  border-left: 2px solid #7a7a78;
+  border-right: 2px solid #242424;
+  border-bottom: 2px solid #242424;
+  padding: 4px;
+}
+.skills__card div.tec_picture {
+  height: 210px;
+  border: 2px solid #7a7a78;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  backdrop-filter: blur(8px);
+}
+.skills__card div.tec_picture i {
+  font-size: 3rem;
+}
+.skills__card div.tec_description {
+  display: none;
+}

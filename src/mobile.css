@@ -1,0 +1,48 @@
+@media (max-width: 640px) {
+  #root {
+    padding: 1rem;
+  }
+
+  header {
+    visibility: visible;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3.5em;
+  }
+
+  header ul {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 2em;
+  }
+
+  section {
+    padding-top: 0;
+  }
+
+  .home {
+    position: relative;
+    flex-direction: column;
+    box-shadow: inset 0 -12px 12px #000;
+    border-radius: 0;
+    background-repeat: round;
+  }
+
+  .profile__text {
+    font-size: 2rem;
+  }
+
+  .section__title {
+    font-size: 4.5rem;
+    line-height: 1.2em;
+  }
+
+  .skills__title, .description__title {
+    font-weight: 400;
+  }
+}
+  

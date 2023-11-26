@@ -1,0 +1,70 @@
+.sobre-mim {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.skills__container {
+  position: relative;
+  height: 320px;
+  width: 100%;
+  border-left: 4px solid var(--dark-bcg);
+  border-right: 4px solid var(--dark-bcg);
+  overflow: hidden;
+}
+
+.skills__container::before, .skills__container::after {
+  content: '';
+  position: absolute;
+  width: 5%;
+  height: 100%;
+  background: linear-gradient(to right, var(--dark-bcg) 0%,
+  transparent 100%);
+  z-index: 2;
+}
+.skills__container::before {
+  left: 0;
+}
+.skills__container::after {
+  right: 0;
+  transform: rotate(180deg);
+}
+.skills__container::-webkit-scrollbar {
+  display: none;
+}
+
+ul.skills__tracker {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 200%;
+  animation: anima-tracker 8s linear infinite alternate;
+}
+ul.skills__tracker::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes anima-tracker {
+  0%, 20% {
+    left: 0;
+  }
+
+  30%, 40% {
+    left: -30%;
+  }
+
+  50%, 60% {
+    left: -50%;
+  }
+
+  70%, 80% {
+    left: -70%;
+  }
+
+  90%, 100% {
+    left: -100%;
+  }
+}
