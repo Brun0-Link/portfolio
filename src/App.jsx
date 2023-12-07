@@ -2,6 +2,7 @@ import { useContext } from "react";
 
 import { Header } from "./components/Header/Header";
 import { HomeSection } from "./components/Sections/HomeSection/HomeSection";
+import { Footer } from "./components/Footer/Footer";
 // import { AboutSection } from "./components/Sections/AboutSection/AboutSection";
 // import { ContactsSection } from "./components/Sections/ContactsSection/ContactsSection";
 // import { ProjectsSection } from "./components/Sections/ProjectsSection/ProjectsSection";
@@ -20,7 +21,7 @@ function App() {
         <ProjectsSection />
         <ContactsSection /> */}
       </main>
-      <footer>Credits soon</footer>
+      <Footer />
     </div >
   );
 }
