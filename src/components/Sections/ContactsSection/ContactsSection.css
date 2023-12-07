@@ -1,9 +1,0 @@
-.contatos {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-}
-
-.social a {
-  font-size: 2em;
-}

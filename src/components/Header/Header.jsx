@@ -19,7 +19,7 @@ export function Header() {
     <header className={`${sticky ? 'sticky' : ''}`}>
       <div className="logo">BrunoTrajano</div>
       <nav>
-        <ul className="menu">
+        <menu className="menu">
           <li>
             <a href="#home">Home</a>
           </li>
@@ -35,7 +35,7 @@ export function Header() {
           <li>
             <a href="#contato">Contato</a>
           </li>
-        </ul>
+        </menu>
       </nav>
 
       <div id="toggle" onClick={toggleTheme}>
