@@ -15,15 +15,15 @@ export function Header() {
           </li>
 
           <li>
-            <a href="/sobre-mim">Sobre mim</a>
+            <a href="/Portfolio/sobre-mim">Sobre mim</a>
           </li>
 
           <li>
-            <a href="/projetos">Projetos</a>
+            <a href="/Portfolio/projetos">Projetos</a>
           </li>
 
           <li>
-            <a href="/contatos">Contato</a>
+            <a href="/Portfolio/contatos">Contato</a>
           </li>
         </menu>
       </nav>
