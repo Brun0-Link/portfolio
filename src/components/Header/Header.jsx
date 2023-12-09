@@ -1,39 +1,29 @@
 import './Header.css'
-import { useContext, useState, useEffect } from "react"
+import { useContext } from "react"
 import { ThemeContext } from "../../context/ThemeContext"
 
 export function Header() {
   const { theme, toggleTheme } = useContext(ThemeContext)
-  const [sticky, setSticky] = useState(false)
-
-  const handleScroll = () => {
-    setSticky(window.scrollY > 0)
-  }
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  })
 
   return (
-    <header className={`${sticky ? 'sticky' : ''}`}>
+    <header className="">
       <div className="logo">BrunoTrajano</div>
       <nav>
         <menu className="menu">
           <li>
-            <a href="#home">Home</a>
+            <a href="/">Home</a>
           </li>
 
           <li>
-            <a href="#sobre-mim">Sobre mim</a>
+            <a href="/sobre-mim">Sobre mim</a>
           </li>
 
           <li>
-            <a href="#projetos">Projetos</a>
+            <a href="/projetos">Projetos</a>
           </li>
 
           <li>
-            <a href="#contato">Contato</a>
+            <a href="/contatos">Contato</a>
           </li>
         </menu>
       </nav>
