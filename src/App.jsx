@@ -16,12 +16,12 @@ function App() {
   return (
     <div className={`App ${theme === "dark" ? "dark_theme" : "light_theme"}`}>
       <Header />
-      <BrowserRouter>
+      <BrowserRouter basename="/Portfolio">
         <Routes>
-          <Route path="/Portfolio" element={<HomeSection />} />
-          <Route path="/Portfolio/sobre-mim" element={<AboutSection />} />
-          <Route path="/Portfolio/contatos" element={<ContactsSection />} />
-          <Route path="/Portfolio/projetos" element={<ProjectsSection />} />
+          <Route Exact Path="/Portfolio" element={<HomeSection />} />
+          <Route path="/sobre-mim" element={<AboutSection />} />
+          <Route path="/contatos" element={<ContactsSection />} />
+          <Route path="/projetos" element={<ProjectsSection />} />
         </Routes>
       </BrowserRouter>
       <Footer />
