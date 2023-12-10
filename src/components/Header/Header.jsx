@@ -11,7 +11,7 @@ export function Header() {
       <nav>
         <menu className="menu">
           <li>
-            <a href="/Portfolio">Home</a>
+            <a href="/">Home</a>
           </li>
 
           <li>
