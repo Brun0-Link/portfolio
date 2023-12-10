@@ -1,8 +1,6 @@
 import './Header.css'
 import { useContext } from "react"
 import { ThemeContext } from "../../context/ThemeContext"
-import { Link } from 'react-router-dom'
-
 
 export function Header() {
   const { theme, toggleTheme } = useContext(ThemeContext)
@@ -13,19 +11,19 @@ export function Header() {
       <nav>
         <menu className="menu">
           <li>
-            <Link to="/">Home</Link>
+            <a href="/Portfolio">Home</a>
           </li>
 
           <li>
-            <Link to="/sobre-mim">Sobre mim</Link>
+            <a href="/Portfolio/sobre-mim">Sobre mim</a>
           </li>
 
           <li>
-            <Link to="/projetos">Projetos</Link>
+            <a href="/Portfolio/projetos">Projetos</a>
           </li>
 
           <li>
-            <Link to="/contatos">Contato</Link>
+            <a href="/Portfolio/contatos">Contato</a>
           </li>
         </menu>
       </nav>
