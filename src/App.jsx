@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import { Header } from "./components/Header/Header";
 import { HomeSection } from "./components/Sections/HomeSection/HomeSection";
@@ -10,20 +10,32 @@ import { Footer } from "./components/Footer/Footer";
 
 import { ThemeContext } from "./context/ThemeContext";
 
+const router = createBrowserRouter([
+  {
+    path: "/Portfolio",
+    element: <HomeSection />,
+  },
+  {
+    path: "/Portfolio/sobre-mim",
+    element: <AboutSection />,
+  },
+  {
+    path: "/Portfolio/contatos",
+    element: <ContactsSection />,
+  },
+  {
+    path: "/Portfolio/projetos",
+    element: <ProjectsSection />,
+  },
+]);
+
 function App() {
   const { theme } = useContext(ThemeContext)
 
   return (
     <div className={`App ${theme === "dark" ? "dark_theme" : "light_theme"}`}>
       <Header />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/Portfolio" element={<HomeSection />} />
-          <Route path="/Portfolio/sobre-mim" element={<AboutSection />} />
-          <Route path="/Portfolio/contatos" element={<ContactsSection />} />
-          <Route path="/Portfolio/projetos" element={<ProjectsSection />} />
-        </Routes>
-      </BrowserRouter>
+      <RouterProvider router={router} />
       <Footer />
     </div >
   );
