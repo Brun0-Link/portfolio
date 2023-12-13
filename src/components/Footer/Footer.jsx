@@ -1,4 +1,4 @@
-import './Footer.css'
+import './Style.css'
 import { Github, Linkedin, Mail, Phone } from 'lucide-react'
 
 export function Footer() {
