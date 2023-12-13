@@ -1,4 +1,4 @@
-import './Style.css'
+import "./Style.css"
 
 export function ProjectsSection() {
   return (
