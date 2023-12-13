@@ -1,4 +1,4 @@
-import '../contactsSection/style.css'
+import '../ContactsSection/style.css'
 
 export function ContactsSection() {
   return (
