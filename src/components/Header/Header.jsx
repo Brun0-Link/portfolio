@@ -11,19 +11,19 @@ export function Header() {
       <nav>
         <menu className="menu">
           <li>
-            <a href="/Portfolio">Home</a>
+            <a href="/portfolio">Home</a>
           </li>
 
           <li>
-            <a href="/Portfolio/sobre-mim">Sobre mim</a>
+            <a href="/portfolio/sobre-mim">Sobre mim</a>
           </li>
 
           <li>
-            <a href="/Portfolio/projetos">Projetos</a>
+            <a href="/portfolio/projetos">Projetos</a>
           </li>
 
           <li>
-            <a href="/Portfolio/contatos">Contato</a>
+            <a href="/portfolio/contatos">Contato</a>
           </li>
         </menu>
       </nav>
