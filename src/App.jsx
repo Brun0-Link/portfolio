@@ -16,7 +16,7 @@ function App() {
   return (
     <div className={`App ${theme === "dark" ? "dark_theme" : "light_theme"}`}>
       <Header />
-      <BrowserRouter basename="/portfolio">
+      <BrowserRouter basename="/">
         <Routes>
           <Route exact path="/" element={<HomeSection />} />
           <Route path="/sobre-mim" element={<AboutSection />} />
