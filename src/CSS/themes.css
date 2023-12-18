@@ -7,7 +7,7 @@ body:has(.App.light_theme) {
   background-color: #f9f9f9;
   color: #213547;
 }
-body:has(.App.light_theme) main .profile {
+body:has(.App.light_theme) .profile {
   color: var(--text-white);
   text-shadow: 1px 2px #333;
 }
