@@ -15,15 +15,15 @@ export function Header() {
           </li>
 
           <li>
-            <Link to="/sobre-mim" className="hover:text-[--icon-color]">Home</Link>
+            <Link to="/sobre-mim" className="hover:text-[--icon-color]">Sobre</Link>
           </li>
 
           <li>
-            <Link to="/projetos" className="hover:text-[--icon-color]">Home</Link>
+            <Link to="/projetos" className="hover:text-[--icon-color]">Projetos</Link>
           </li>
 
           <li>
-            <Link to="/contatos" className="hover:text-[--icon-color]">Home</Link>
+            <Link to="/contatos" className="hover:text-[--icon-color]">Contatos</Link>
           </li>
         </menu>
       </nav>
