@@ -1,46 +1,26 @@
-body:has(.App.dark_theme) {
-  background-color: var(--dark-bcg);
-  color: var(--text-white);
-}
-
-body:has(.App.light_theme) {
-  background-color: #f9f9f9;
-  color: #213547;
-}
-body:has(.App.light_theme) .profile {
+body.light .profile {
   color: var(--text-white);
   text-shadow: 1px 2px #333;
 }
-body:has(.App.light_theme) #toggle {
-  background: #fff;
-  box-shadow: inset 0 2px 60px rgba(0, 0, 0, 0.1),
-    inset 0 2px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.05);
+body.light #toggle {
+  background: var(--dark-bcg);
+  box-shadow: inset 0 2px 60px rgba(0, 0, 0, 0.4),
+    inset 0 2px 8px rgba(0, 0, 0, 0.4), inset 0 -4px 4px rgba(0, 0, 0, 0.4);
 }
-body:has(.App.light_theme) #toggle .indicator {
+body.light #toggle #indicator {
   left: 40px;
   background: linear-gradient(to bottom, #eaeaea, #f9f9f9);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1),
     inset 0 4px 4px rgba(255, 255, 255, 1),
     inset 0 -4px 4px rgba(255, 255, 255, 1);
 }
-body:has(.App.light_theme) .logo:before,
-body:has(.App.light_theme) .logo:after {
+body.light #logo:before,
+body.light #logo:after {
   color: #213547;
 }
-body:has(.App.light_theme) a:hover {
+body.light a:hover {
   color: #747bff;
 }
-body:has(.App.light_theme) .to-top {
-  background-color: var(--icon-color);
-  box-shadow: inset 0px 1px 8px var(--primary-color);
-}
-body:has(.App.light_theme) .projetos .card-container {
-  box-shadow: 0px 0px 16px var(--dark-bcg);
-}
-body:has(.App.light_theme) .skills__container::before,
-body:has(.App.light_theme) .skills__container::after {
-  background: linear-gradient(to right, var(--text-white) 0%, transparent 100%);
-}
-body:has(.App.light_theme) .skills__card {
+body.light footer a {
   color: var(--text-white);
 }

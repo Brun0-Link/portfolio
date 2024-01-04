@@ -1,11 +1,10 @@
-import './style.css'
 import { Github, Linkedin, Mail, Phone } from 'lucide-react'
 
 export function Footer() {
   return (
-    <footer className="footer">
-      <p>Meus links</p>
-      <div className="contacts">
+    <footer className="pt-8 pb-8 pr-20 pl-20 w-full flex justify-center items-center gap-36 fixed bottom-0 bg-[--default-white] text-zinc-800">
+      <p className='font-medium text-3xl'>Meus links</p>
+      <div id='contacts' className="flex gap-12">
         <a href="https://github.com/Brun0-Link" target='_blank' title='Meu Github'>
           <Github />
         </a>
