@@ -1,4 +1,5 @@
 import { useContext } from "react"
+import { Link } from "react-router-dom"
 import { ThemeContext } from "@/context/ThemeContext"
 
 export function Header() {
@@ -10,19 +11,19 @@ export function Header() {
       <nav>
         <menu className="flex justify-between gap-16 text-4xl text-[--primary-color]">
           <li>
-            <a href="/" className="hover:text-[--icon-color]">Home</a>
+            <Link to="/" className="hover:text-[--icon-color]">Home</Link>
           </li>
 
           <li>
-            <a href="/sobre-mim" className="hover:text-[--icon-color]">Sobre mim</a>
+            <Link to="/sobre-mim" className="hover:text-[--icon-color]">Home</Link>
           </li>
 
           <li>
-            <a href="/projetos" className="hover:text-[--icon-color]">Projetos</a>
+            <Link to="/projetos" className="hover:text-[--icon-color]">Home</Link>
           </li>
 
           <li>
-            <a href="/contatos" className="hover:text-[--icon-color]">Contato</a>
+            <Link to="/contatos" className="hover:text-[--icon-color]">Home</Link>
           </li>
         </menu>
       </nav>

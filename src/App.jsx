@@ -26,16 +26,16 @@ function App() {
 
   return (
     <div className={`w-screen h-screen dark:bg-[--dark-bcg] bg-[--default-white] text-[--text-white]`}>
-      <Header />
       <BrowserRouter basename="/">
+        <Header />
         <Routes>
           <Route exact path="/" element={<HomeSection />} />
           <Route path="/sobre-mim" element={<AboutSection />} />
           <Route path="/projetos" element={<ProjectsSection />} />
           <Route path="/contatos" element={<ContactsSection />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
-      <Footer />
     </div >
   );
 }
