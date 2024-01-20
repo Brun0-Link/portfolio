@@ -66,6 +66,9 @@
   body {
     @apply bg-background text-foreground;
   }
+  body a:hover {
+    color: #0d78c5;
+  }
 }
 
 html {

@@ -25,8 +25,13 @@ module.exports = {
         "semi-transparent": "rgba(255,255,255,.5)",
       },
       backgroundImage: {
-        indicatorBg: "linear-gradient(to bottom, #444, #222)",
+        indicatorBgDark: "linear-gradient(to bottom, #444, #222)",
+        indicatorBgLight: "linear-gradient(to bottom, #eaeaea, #f9f9f9)",
         homeBg: "url('../../src/assets/images/BcgTech.gif')",
+      },
+      backgroundSize: {
+        "50%": "50%",
+        480: "120rem",
       },
       colors: {
         border: "hsl(var(--border))",
